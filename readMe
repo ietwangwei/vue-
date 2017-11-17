@@ -1,0 +1,18 @@
+第一步组件(component.vue):
+<template>
+</template>
+<script>
+	name:'xx',
+	date (){
+		return {
+			a:1
+		}
+	}
+</script>
+<style>
+</style>
+第二步装载(app.js):
+2.1 作为vue扩展项mycomponent = vue.extend(component)
+2.2 插入body  documen.body.appendChild(mycomponent)
+2.3 写核心方法 mainFn()
+2.4 挂载在vue原型链上作为install的fn
